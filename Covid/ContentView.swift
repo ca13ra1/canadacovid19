@@ -30,11 +30,12 @@ struct ContentView: View {
                         .listRowBackground(Color.blue)
                 }
             }
-            .navigationTitle("Canada")
+            .navigationBarTitle("Canada", displayMode: .automatic)
             .refreshable {
                 await data.covidgraphdata()
             }
         }
+        .navigationViewStyle(.stack)
         .task {
             await data.covidgraphdata()
         }
