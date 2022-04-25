@@ -17,6 +17,7 @@ class CovidData: ObservableObject {
     @Published var deaths: [DataPoint] = []
     @Published var vaccine: [DataPoint] = []
     @Published var date: String = ""
+    @Published var loading: Bool = true
     
     func covidgraphdata() async {
         let request = URLRequest(url: URL(string: "https://api.opencovid.ca/summary")!)
@@ -24,7 +25,7 @@ class CovidData: ObservableObject {
             .map{ $0.data }
             .decode(type: Covid.self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { print ("Received completion: \($0).") },
+            .sink(receiveCompletion: { print ("Received completion: \($0)."); self.loading = false },
                   receiveValue: { covid in
                 self.date = covid.summary.first?.date ?? ""
                 

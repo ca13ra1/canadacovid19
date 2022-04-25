@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		647ADC9D2816918200505111 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647ADC9C2816918200505111 /* Date+Extension.swift */; };
 		64BE64C82731D62700BC6087 /* CovidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BE64C72731D62700BC6087 /* CovidApp.swift */; };
 		64BE64CA2731D62700BC6087 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BE64C92731D62700BC6087 /* ContentView.swift */; };
 		64BE64CC2731D62900BC6087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64BE64CB2731D62900BC6087 /* Assets.xcassets */; };
 		64BE64CF2731D62900BC6087 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64BE64CE2731D62900BC6087 /* Preview Assets.xcassets */; };
 		64BE64DA2731D7E300BC6087 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BE64D92731D7E300BC6087 /* Int+Extension.swift */; };
-		64BE64DC2731D7F200BC6087 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BE64DB2731D7F200BC6087 /* Date+Extension.swift */; };
 		64BE64DE2731D81200BC6087 /* Vaccine+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BE64DD2731D81200BC6087 /* Vaccine+Extension.swift */; };
 		64BE64E02731D85E00BC6087 /* Covid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BE64DF2731D85E00BC6087 /* Covid.swift */; };
 		64BE64E22731D87A00BC6087 /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BE64E12731D87A00BC6087 /* Summary.swift */; };
@@ -24,13 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		647ADC9C2816918200505111 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		64BE64C42731D62700BC6087 /* Covid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Covid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64BE64C72731D62700BC6087 /* CovidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidApp.swift; sourceTree = "<group>"; };
 		64BE64C92731D62700BC6087 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		64BE64CB2731D62900BC6087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64BE64CE2731D62900BC6087 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64BE64D92731D7E300BC6087 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
-		64BE64DB2731D7F200BC6087 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		64BE64DD2731D81200BC6087 /* Vaccine+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vaccine+Extension.swift"; sourceTree = "<group>"; };
 		64BE64DF2731D85E00BC6087 /* Covid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid.swift; sourceTree = "<group>"; };
 		64BE64E12731D87A00BC6087 /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
@@ -123,8 +123,8 @@
 		64BE64D82731D7C400BC6087 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				647ADC9C2816918200505111 /* Date+Extension.swift */,
 				64BE64D92731D7E300BC6087 /* Int+Extension.swift */,
-				64BE64DB2731D7F200BC6087 /* Date+Extension.swift */,
 				64BE64DD2731D81200BC6087 /* Vaccine+Extension.swift */,
 			);
 			path = Extensions;
@@ -207,12 +207,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				64BE64DA2731D7E300BC6087 /* Int+Extension.swift in Sources */,
+				647ADC9D2816918200505111 /* Date+Extension.swift in Sources */,
 				64BE64E42731D88C00BC6087 /* Vaccine.swift in Sources */,
 				64BE64E02731D85E00BC6087 /* Covid.swift in Sources */,
 				64BE64E92731D96A00BC6087 /* CovidData.swift in Sources */,
 				64BE64DE2731D81200BC6087 /* Vaccine+Extension.swift in Sources */,
 				64BE64EB2731D98C00BC6087 /* ChartViewCell.swift in Sources */,
-				64BE64DC2731D7F200BC6087 /* Date+Extension.swift in Sources */,
 				64BE64CA2731D62700BC6087 /* ContentView.swift in Sources */,
 				64BE64ED2731D9C100BC6087 /* ButtonCell.swift in Sources */,
 				64BE64C82731D62700BC6087 /* CovidApp.swift in Sources */,
@@ -359,7 +359,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cabralcole.Covid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -388,7 +388,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cabralcole.Covid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
